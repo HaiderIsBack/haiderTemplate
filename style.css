@@ -6,6 +6,10 @@
     font-family: sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .hori-center{
     display: flex;
     justify-content: center;
@@ -45,6 +49,7 @@ nav img{
     left: 0%;
     border-bottom: 70px solid #fff;
     border-left:1400px solid transparent;
+    overflow-x: hidden;
 }
 
 nav .nav-items{
@@ -195,6 +200,7 @@ nav .nav-text button:hover{
     left: 0%;
     border-top: 70px solid #fff;
     border-right:1400px solid transparent;
+    overflow-x: hidden;
     
 }
 
@@ -208,7 +214,7 @@ nav .nav-text button:hover{
 
 .manager .manager-content{
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 100px;
     width: 100%;
     height: 600px;
     position: absolute;
@@ -237,7 +243,11 @@ nav .nav-text button:hover{
     cursor: pointer;
 }
 
-.card{
+.services .hori-center{
+    flex-wrap: wrap;
+}
+
+.services .hori-center .card{
     width: 300px;
     height: 200px;
     padding:15px;
@@ -267,6 +277,10 @@ nav .nav-text button:hover{
 
 .content p{
     color: #fff;
+}
+
+.card2{
+    flex-wrap: wrap;
 }
 
 .card2 .vert-center{
@@ -554,6 +568,9 @@ nav .nav-text button:hover{
     background: #fff;
     border: 3px solid #ff6600;
 }
+.brands{
+    flex-wrap: wrap;
+}
 .brands img{
     width: 200px;
 }
@@ -687,6 +704,12 @@ nav .nav-text button:hover{
     .card2 h2{
         font-size: 13px;
     }
+
+    .media-links button{
+        font-size: 10px;
+        font-weight: bold;
+    }
+
     .cool-facts .details h1{
         font-size: 20px;
     }
@@ -750,5 +773,146 @@ nav .nav-text button:hover{
     }
     .foot .info .hori-center i{
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav{
+        overflow-y: hidden;
+    }
+    .fa-bars{
+        display: block;
+    }
+    nav ul li{
+        display: none;
+    }
+    nav .nav-text h2{
+        font-size: 30px;
+    }
+    .sidebar{
+        display: block;
+    }
+    .brands img{
+        width:100px;
+    }
+    .about{
+        font-size: 10px;
+    }
+    .about .about-content{
+        flex-direction: column-reverse;
+    }
+    .about .about-content img{
+        width: 90%;
+    }
+    .manager{
+        font-size: 10px;
+    }
+    .manager .manager-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .manager .manager-content img{
+        width:200px;
+        height: 200px;
+        border: 4px solid #ff6600;
+        margin-bottom: 20px;
+    }
+    .services .hori-center .card i{
+        font-size: 20px;
+    }
+    
+    .services .hori-center .card{
+        width: 150px;
+        height: 100px;
+        margin:10px 15px;
+    }
+    .services .hori-center .card h3{
+        font-size: 12px;
+    }
+    .happy-customers{
+        font-size:15px;
+    }
+    .happy-customers p{
+        max-width: 250px;
+    }
+    .card2 img{
+        width: 150px;
+        height: 100px;
+    }
+    .card2 h2{
+        font-size: 13px;
+    }
+    .card2 p{
+        max-width: 150px;
+    }
+    .cool-facts .details h1{
+        font-size: 20px;
+    }
+    .cool-facts .details i{
+        font-size: 30px;
+    }
+    .cool-facts .content .details{
+        margin: 20px 20px;
+    }
+    .team .hori-center{
+        flex-wrap: wrap;
+    }
+    .newsletter .content .inputBar input{
+       width: 300px;
+    }
+    .newsletter .content .inputBar i{
+        left: 24%;
+    }
+    .video-promo h3{
+        font-size: 13px;
+        max-width: 300px;
+    }
+    .contact-us .info iframe{
+        width: 300px;
+    }
+    .contact-us .info .time h1, .contact-us .info .phone h1{
+        font-size: 10px;
+    }
+    .contact-us .info .time hr, .contact-us .info .phone hr{
+        width: 100px;
+    }
+    .contact-us .info .time p, .contact-us .info .phone p{
+        font-size: 10px;
+    }
+    .contact-us .info .time{
+        left: 5%;
+        width: 200px;
+    }
+    .contact-us .info .phone{
+        left: 50%;
+        width: 200px;
+    }
+    .contact-us .info .hori-center{
+        flex-wrap: wrap;
+    }
+    .email .info .inputBar2{
+        width: 200px;
+    }
+    .email .info .inputBar2 input{
+        width: 200px;
+        font-size: 13px;
+    }
+    .email .info textarea{
+        width: 400px;
+    }
+    .sendMail{
+        width: 200px;
+    }
+    .foot .info h2{
+        font-size: 10px;
+    }
+    .foot .info .hori-center i{
+        font-size: 25px;
+    }
+    .cool-facts .content .hori-center{
+        flex-wrap: wrap;
     }
 }
