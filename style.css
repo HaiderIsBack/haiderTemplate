@@ -284,7 +284,7 @@ nav .nav-text button:hover{
 }
 
 .card2 .vert-center{
-    margin:20px 15px;
+    margin:20px 25px;
 }
 
 .card2 img{
@@ -776,7 +776,7 @@ nav .nav-text button:hover{
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     body{
         overflow-x: hidden;
     }
@@ -838,6 +838,9 @@ nav .nav-text button:hover{
     .happy-customers p{
         max-width: 250px;
     }
+    .card2 .vert-center{
+        margin: 20px 15px;
+    }
     .card2 img{
         width: 150px;
         height: 100px;
@@ -855,13 +858,16 @@ nav .nav-text button:hover{
         font-size: 30px;
     }
     .cool-facts .content .details{
-        margin: 20px 20px;
+        margin: 20px 30px;
     }
     .team .hori-center{
         flex-wrap: wrap;
     }
     .newsletter .content .inputBar input{
        width: 300px;
+    }
+    .newsletter .content h4{
+        font-size: 15px;
     }
     .newsletter .content .inputBar i{
         left: 24%;
@@ -884,27 +890,48 @@ nav .nav-text button:hover{
     }
     .contact-us .info .time{
         left: 5%;
+        top: 65%;
         width: 200px;
     }
     .contact-us .info .phone{
-        left: 50%;
+        left: 5%;
+        top: 35%;
         width: 200px;
     }
     .contact-us .info .hori-center{
         flex-wrap: wrap;
     }
     .email .info .inputBar2{
-        width: 200px;
+        width: 150px;
+    }
+    .email .info .inputBar2:nth-child(1){
+        margin-right: 30px;
     }
     .email .info .inputBar2 input{
-        width: 200px;
-        font-size: 13px;
+        width: 150px;
+        padding: 10px 10px;
+        font-size: 10px;
+        outline: none;
+    }
+    .email .info .inputBar2:nth-child(3){
+        width: 600px;
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    .email .info .inputBar2 input:nth-child(3){
+        width: 500px;
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+    .emailSection{
+        flex-direction: column;
     }
     .email .info textarea{
-        width: 400px;
+        width: 350px;
     }
     .sendMail{
         width: 200px;
+        font-size: 13px;
     }
     .foot .info h2{
         font-size: 10px;
